@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Menighetshus</title>
+    <link rel="stylesheet" href="stilark.css">
+</head>
+
+<body>
+    <div id="grad1">
+        <h1><span>Ask Menighetshus</span></h1>
+    </div> 
+        
+    <div id="navbar">
+    <a href="Hovedside.html">Forside</a>
+    <a href="utleie.html">Utleie</a>
+    <a href="OmOss.html">Om oss</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Lokalet</h2>
+            <p> Ask menighetshus ble bygget i 1939, 
+                men er blitt påbygget og rehabilitert flere ganger. <br>
+                Resultatet er blitt et trivelig og tjenlig hus som det er 
+                ganske populært å leie til ulike arrangementer.</p>
+                <br>
+                <img src="Bilder/Hus.jpg" style="margin-left: 10%;"> 
+                <br>
+
+           <p>Kjøkkenet ble nytt i 2014 
+            og må sies å være et «storkjøkken» i passelig format for ca. 100 gjester.<br> 
+            Salen har også plass til ca. 100 gjester, men rundt 60 er optimalt. </p>
+            <br>
+
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <div class="numbertext">1 / 3</div>
+                  <img src="Bilder/Kjøkken.jpg">
+                </div>
+              
+                <div class="mySlides1">
+                    <div class="numbertext">2 / 3</div>
+                  <img src="Bilder/Kjøkken2.jpg">
+                </div>
+              
+                <div class="mySlides1">
+                    <div class="numbertext">3 / 3</div>
+                  <img src="Bilder/Kjøkken3.jpg">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div>
+                <br>
+
+            <p>Huset holder alt nødvendig dekketøy, mens duker kan leies. Vi har et godt
+                høyttaleranlegg og en ypperlig projektor. <br>
+                Tar en med seg en bærbar pc eller minnepinne, er det utstyr for en enkel påkobling.<br>
+                Toalettfasilitetene er nye, og så for funksjonshemmede. Huset blir mye brukt til minnesamvær, dåps- og
+                konfirmasjons-middager.<br> Bryllupsfest har vært arrangert flere ganger. 
+                Også runde dager feires i huset.<br>
+                Vi understreker at det ikke er tillatt
+                med alkoholservering. 
+                <br><br>
+                Ta gjerne kontakt for omvisning, pris og bestilling.</p>
+                <br>
+                <div class="slideshow-container">
+                <div class="mySlides2">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="Bilder/Lokale.jpg">
+                </div>
+                
+                <div class="mySlides2">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="Bilder/Lokale3.jpg">
+                </div>
+                
+                <div class="mySlides2">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="Bilder/Lokale4.jpg">
+                </div>
+
+                <div class="mySlides2">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="Bilder/Lokale5.jpg">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                
+            <script>
+                var slideIndex = [1,1];
+                var slideId = ["mySlides1", "mySlides2"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+                
+                function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+                }
+                
+                function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
+                }
+            </script>
+        </div>
+    </div>
+
+
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>Adresse:</h2>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="300" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Askvegen%20374,%205307%20Ask&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <p>Ask menighetshus,<br>
+                    Askvegen 374,<br>
+                    5307 Ask
+                </p>
+            </div></div>
+          </div>
+
+          <div class="card">
+            <h3>Kontaktinformasjon:</h3>
+            <p class="kontakt">
+                Øyvind Fluge<br>
+                Mobil: <a href="tel: 98817422">98817422</a><br>
+                Mail: <a href="mailto:oyvindfluge@gmail.com">oyvindfluge@gmail.com</a><br>
+                Vippsnummer: 55 07 64</li><br>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
