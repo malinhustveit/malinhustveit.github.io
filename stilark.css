@@ -41,12 +41,10 @@ body {
     padding: 50px;
     text-align: center;
     font-size: 80px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
   }
-span{
-  background-color: rgba(255, 255, 255, 0.651);
-  padding: 10px;
-  border-radius: 20px;
-}
+  
   #grad1 {
     height: 500px;
   background: url(Bilder/Lokale2.jpg) no-repeat center;
